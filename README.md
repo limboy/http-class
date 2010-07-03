@@ -1,6 +1,6 @@
 http class usage
 ======
-
+use curl default , if curl is not installed , fsockopen method will be used.
 	<?php
 	require 'http.php';
 	$http = new Http();
@@ -24,7 +24,7 @@ http class usage
 
 http_lite class useage
 ======
-http_lite is a copy of kohana's remote class
+http_lite is a copy of kohana's remote class , curl is needed
 
-<?php
-echo remote::get('http://www.google.com');
+	<?php
+	echo remote::get('http://www.google.com');
